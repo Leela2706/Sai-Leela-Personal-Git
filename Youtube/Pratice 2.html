@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #nike{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    #price{
+        color: rgb(1, 118, 1);
+        font-weight: bold;
+    }
+    #add{
+        background-color: rgb(255, 216, 20);
+        width: 145px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    #add:hover{
+        background-color: rgb(238, 198, 2) ;
+    }
+    #add:active{
+        opacity: 0.4;
+    }
+    #buy{
+        background-color: orange;
+        width: 110px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        font-weight: bold;
+    }
+    #buy:hover{
+        background-color:orangered;
+        color: black;
+    }
+    #buy:active{
+        opacity: 0.4;
+    }
+    #name{
+        color:rgb(0, 113, 113)
+    }
+    #name:hover{
+        color: rgb(223, 157, 33);
+    }
+    #name2{
+        display:block;
+        margin-bottom: 0px;
+    }
+    #line{
+        display:block;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .thanks{
+        width: 200px;
+        display: inline-block;
+    }
+    #fname{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 8px;
+        width: 100px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+    #lname{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 8px;
+        width: 100px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+    #g-mail{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 8px;
+        width: 215px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .signup-button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 227px;
+        background-color:rgb(88, 88, 254);
+        color: white;
+        margin-top: 10px;
+    }
+    .request{
+        font-weight: bold;
+        font-family: arial;
+    }
+    #pickup{
+        width: 250px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgb(237, 236, 236);
+        border: none;
+        border-radius: 1px;
+        padding-left: 15px;
+        margin-bottom: 0px;
+    }
+    #destination{
+        width: 250px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgb(237, 236, 236);
+        border: none;
+        border-radius: 1px;
+        padding-left: 15px;
+        display:block;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .now{
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 30px;
+        border: none;
+    }
+    .schedule{
+        background-color: rgb(237, 236, 236);
+        color: black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 30px;
+        border: none;
+        margin-left: 10px;
+    }
+</style>
+<body>
+    <button>CLICK</button> <br> <br>
+    <button>LEELA</button>
+    <button>KULIFA</button><br><br>
+<p>Hello,World!</p>
+<p>Today i went to HTML class and learned something new</p><br>
+<a id="name" href="https://www.amazon.in/Nike-AIR-Impact-4-BLACK-ANTHRA-DM1124-004-7/dp/B0B6G3D2N8/ref=sr_1_9?keywords=nike%2Bblack%2Brunning%2Bshoes&s=shoes&sr=1-9&th=1&psc=1">Back to Amazon</a>
+<p id="nike">Nike Black running Shoes</p>
+<p id="price">8490/- in stock.</p>
+<p>Free Delivery tomorrow.</p>
+<button id="add">Add to cart</button>
+<button id="buy">Buy now</button>
+
+<br><br>
+
+<input type="text" name="Name" id="name2" placeholder="Name">
+<input type="Email" name="Email" id="line" placeholder="Email">
+
+
+<p class="thanks">Thanks for chatting with our customer support.Would you like to take our quick survey?</p>
+<button id="yes">Yes</button>
+<button id="no">No</button>
+
+<br><br>
+
+<input type="text" name="first name" id="fname" placeholder="First Name">
+<input type="text" name="second name" id="lname" placeholder="Last Name">
+<input type="E-mail" name="E-mail" id="g-mail" placeholder="Email">
+<button class="signup-button">Sign Up</button>
+
+<br>
+
+<h2 class="request">Request a ride now</h2>
+<input type="text" name="pickup location" id="pickup" placeholder="Enter pickup location">
+<input type="text" name="Enter" id="destination" placeholder="Enter destination">
+
+<button class="now">Request now</button>
+<button class="schedule">Schedule for later</button>
+
+</body>
+</html>

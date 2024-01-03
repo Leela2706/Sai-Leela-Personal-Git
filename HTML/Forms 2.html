@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color: red;
+    }
+    h2{
+        color: red;
+    }
+    form{
+        text-align: center;
+        background-color: chartreuse;
+        
+    }
+</style>
+<body>
+    <form action="">
+        <H1>Personal Details</H1>
+        <label for="">Name</label>
+        <input type="text" name="Name" id="Name"> <br><br>
+
+        <label for="Password">Password</label>
+        <input type="password" name="" id="Password"><br><br>
+
+        <label for="E-mail">E-mail</label>
+        <input type="email" name="" id="E-mail"><br><br>
+
+        <label for="Gender">Gender</label>
+        <input type="radio" name="Gender" id="Male">Male
+        <input type="radio" name="Gender" id="Female">Female<br><br>
+
+        <label for="contact">Contact</label>
+        <input type="tel" name="Contact" id="Contact"><br><br>
+
+        <h2>Educational Qualification</h2>
+
+        <label for="">Degree</label>
+        <select name="Degree" id="">
+        <option value="--Select Group--">--Select Group-</option>
+        <option value="B-Tech">B-Tech</option>
+        <option value="MCA">MCA</option>
+        <option value="MBA">MBA</option>
+        <option value="M.S">M.S</option>
+        </select><br><br>
+
+        <label for="">Engineering</label>
+        <select name="Engineering" id="">
+            <option value="--Select option--">--Select option--</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+        </select><br><br>
+
+
+        <label for="Hobbies">Hobbies</label>
+        :<input type="checkbox" name="Hobbies"value="Playing Chess">Plaaying Chess
+        :<input type="checkbox" name="Hobbies" value="Reading Books">Reading Books
+
+        <h2>Address</h2>
+        
+        <textarea name="Address" id="" cols="50" rows="9"></textarea><br><br>
+
+ <button>Submit</button>
+     </form>
+
+</body>
+</html>
