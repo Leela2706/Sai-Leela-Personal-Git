@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            background: lightgray;
+            display: grid;
+            /* grid-template-columns: auto auto auto; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 150px 250px;
+            /* grid-auto-flow: row; */
+            /* or grid-auto-flow: column; */
+            gap: 10px;
+
+            /* flex-wrap: wrap; */
+        }
+
+        .item {
+            background: lightcoral;
+            margin: 5px;
+            display: grid;
+            justify-content: center;
+
+        }
+
+        .box1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .box3{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .box5{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .box6{
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        /* @media only screen and (max-width: 768px) {
+            #main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+  
+} */
+        
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <!-- div.item*9{Box $}  -->
+        <div class="item box1">Box 1</div>
+        <div class="item">Box 2</div>
+        <div class="item box3">Box 3</div>
+        <div class="item">Box 4</div>
+        <div class="item box5">Box 5</div>
+        <div class="item box6">Box 6</div>
+        <div class="item">Box 7</div>
+        <div class="item">Box 8</div>
+        <div class="item">Box 9</div>
+        <div class="item">Box 10</div>
+        <div class="item">Box 11</div>
+    </div>
+</body>
+
+</html>

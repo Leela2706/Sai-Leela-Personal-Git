@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic 89 Grid</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        background-color: #333333;
+    }
+
+    .box-1 {
+        width: 960px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        padding: 20px 0px 20px;
+    }
+
+    .box-1 h1 {
+        font-size: 36px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #c0bab6;
+        font-weight: lighter;
+    }
+
+    .box-1 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #c0bab6;
+    }
+
+    nav {
+        background-color: #232323;
+        padding: 20px 0px 20px;
+    }
+
+    ul {
+        padding: 0px 20px 0px 20px;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    nav a {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 10px;
+        color: #c0bab6;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ff9900;
+    }
+
+    .box-2 {
+        width: 960px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .box-3 {
+        width: 960px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 225px 225px 225px 225px;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .box-3 h1 {
+        display: inline;
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+    }
+
+    .box-3 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        margin: 5px 0px 5px;
+        line-height: 1.6em;
+    }
+
+    .box-3 footer {
+        color: #ff9900;
+        float: right;
+        cursor: pointer;
+    }
+
+    .enter {
+        width: 960px;
+        margin: auto;
+    }
+
+    .enter footer {
+        color: #ff9900;
+        margin-top: 20px;
+        float: right;
+        cursor: pointer;
+        padding-bottom: 30px;
+    }
+
+    .box-4 {
+        width: 960px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+    }
+
+    .box-4 img {
+        border: 1px solid rgb(179, 178, 178);
+        padding: 4px;
+        margin-top: 30px;
+    }
+
+    .box-4 footer {
+        float: right;
+        color: #ff9900;
+        cursor: pointer;
+    }
+
+    .box-5 {
+        width: 960px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 350px;
+    }
+
+    .insidebox-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-bottom: 30px;
+    }
+
+    .insidebox-1 {
+        width: 630px;
+        float: left;
+        height: 350px;
+    }
+
+    .insidebox-2 h1 {
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+    }
+
+    .insidebox-2 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        margin: 13px 0px 13px;
+        line-height: 1.6em;
+    }
+
+    .insidebox-2 footer {
+        color: #ff9900;
+        float: right;
+        cursor: pointer;
+    }
+
+    .insidebox-2 img {
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .fn {
+        margin-left: 28px;
+    }
+
+    .insidebox-3 {
+        width: 280px;
+        float: right;
+        height: 335px;
+    }
+
+    .insidebox-3 h1 {
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        margin-bottom: 15px;
+    }
+
+    .insidebox-3 a {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .insidebox-3 a:hover {
+        color: #ff9900;
+    }
+
+    .insidebox-3 p {
+        margin-bottom: 8px;
+    }
+
+    .insidebox-3 img {
+        width: 12px;
+    }
+
+    .last-box {
+        background-color: #232323;
+    }
+
+    .last-one {
+        padding: 20px 0px 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        width: 960px;
+        margin: auto;
+    }
+    .last-one p{
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+    }
+    .insidebox-2 span{
+        color: #ff9900;
+        cursor: pointer;
+    }
+    
+</style>
+
+<body>
+    <div class="header">
+        <div class="box-1">
+            <div>
+                <h1> Basic 89</h1>
+                <p> Free HTML5 Website Template</p>
+            </div>
+
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="">TEXT LINK</a></li>
+                        <li><a href="">TEXT LINK</a></li>
+                        <li><a href="">TEXT LINK</a></li>
+                        <li><a href="">TEXT LINK</a></li>
+                        <li><a href="">TEXT LINK</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-2">
+        <img src="../Images/960x360.gif" alt="">
+    </div>
+
+    <div class="box-3">
+
+        <div>
+            <img src="../Images/32x32.gif" alt="">
+            <h1>LORUM IPSUM DOLOR</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla
+                massa ut nisi ullamcorper.</p>
+            <footer>Read More »</footer>
+        </div>
+
+        <div>
+            <img src="../Images/32x32.gif" alt="">
+            <h1>LORUM IPSUM DOLOR</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla
+                massa ut nisi ullamcorper.</p>
+            <footer>Read More »</footer>
+        </div>
+
+
+        <div>
+            <img src="../Images/32x32.gif" alt="">
+            <h1>LORUM IPSUM DOLOR</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla
+                massa ut nisi ullamcorper.</p>
+            <footer>Read More »</footer>
+        </div>
+
+        <div>
+            <img src="../Images/32x32.gif" alt="">
+            <h1>LORUM IPSUM DOLOR</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla
+                massa ut nisi ullamcorper.</p>
+            <footer>Read More »</footer>
+        </div>
+    </div>
+    <hr style="margin: auto;" width="960px">
+
+    <div class="enter">
+        <div class="box-4">
+            <div><img src="../Images/290x180.gif" alt=""></div>
+            <div><img src="../Images/290x180.gif" alt=""></div>
+            <div><img src="../Images/290x180.gif" alt=""></div>
+        </div>
+        <footer>View All Our Recent Work Here »</footer>
+        <hr style="margin: auto;" width="960px">
+    </div>
+
+
+    <div class="box-5">
+        <div class="insidebox-1">
+            <div class="insidebox-2">
+                <div><img src="../Images/180x150.gif" alt=""></div>
+                <div class="fn">
+                    <h1>INDONECTETUS FACILIS LEO NIBH</h1>
+                    <p>This is a W3C compliant free website template from <span>OS Templates</span>. For full terms of
+                        use of this template please read our <span> website template licence</span>.</p>
+                    <footer>Read More »</footer>
+                </div>
+            </div>
+
+            <div class="insidebox-2">
+                <div><img src="../Images/180x150.gif" alt=""></div>
+                <div class="fn">
+                    <h1>INDONECTETUS FACILIS LEO NIBH</h1>
+                    <p>This is a W3C compliant free website template from <span>OS Templates</span> . For full terms of
+                        use of this template please read our <span>website template licence</span> .</p>
+                    <footer>Read More »</footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="insidebox-3">
+            <h1>CATEGORIES</h1>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""> <a href="">Free Website Templates</a></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><a href="">Free CSS Templates</a></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><a href="">Free XHTML Templates</a></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><a href="">Free Web Templates</a></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><a href="">Free Website Layouts</a></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><a href="">Free HTML5 Templates</a></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><a href="">Free Webdesign Templates</a></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><a href="">Free Fireworks Templates</a></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><a href="">Free PNG Templates</a></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><a href="">Free Website Themes</a></p>
+            <hr>
+        </div>
+    </div>
+
+    <div class="last-box">
+        <div class="last-one">
+            <div>
+                <p>Copyright © 2018 - All Rights Reserved - Domain Name</p>
+            </div>
+            <div>
+                <p>Template by OS Templates</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

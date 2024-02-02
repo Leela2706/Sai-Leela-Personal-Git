@@ -1,33 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    .first-box{
-        background-color: wheat;
-        padding: 20px;
-        display: flex;
-        justify-content:space-between;
+    .box-1 {
+        display: grid;
+        grid-template-columns: 200px 75px;
     }
-    .box-1{
-        background-color: black;
-        width: 300px;
-        height: 150px;
-        margin-bottom: 20px;
+
+    .box-2 {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
-    .box-2{
+
+    .box-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .box-3 div {
+        background-color: lightpink;
+    }
+
+    .numbers {
+        display: grid;
+        grid-template-columns: auto auto auto;
         background-color: red;
-        width: 300px;
-        height: 150px;   
+        padding: 10px;
+    }
+    .numbers div{
+        background-color: lightblue;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+    }
+    .lap-1{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color:chartreuse;
+        padding: 5px;
+        
+    }
+    .lap-1 div{
+        background-color: lightyellow;
+        padding: 20px;
+        border: 1px solid rgb(135, 135, 135);
+        text-align: center;
     }
 </style>
+
 <body>
-   <div class="first-box">
-    <div class="box-1">    </div>
-    <div class="box-2">    </div>
-   </div> 
+    <div class="box-1">
+        <div style="background-color: lightblue;"> 200px </div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+
+    <div class="box-2">
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+    </div>
+
+    <div class="box-3">
+        <div>col1</div>
+        <div>col2</div>
+        <div>col3</div>
+        <div>col4</div>
+        <div>col1</div>
+        <div>col2</div>
+        <div>col3</div>
+        <div>col4</div>
+    </div>
+
+    <div class="numbers">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="lap-1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
 </body>
+
 </html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        background-color: #333333;
+        height: 116px;
+    }
+
+    .box-1 {
+        padding: 20px 0px 20px 0px;
+        width: 960px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box-1 nav {
+        border: 1px;
+        background-color: #232323;
+        padding: 20px 0px 20px 0px;
+        font-size: 13px;
+        margin-top: px;
+    }
+
+    .box-1 li {
+        display: inline;
+        list-style-type: none;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .box-1 a {
+        text-decoration: none;
+        color: #c0bab6;
+        font-size: 13px;
+    }
+
+    .box-1 a:hover {
+        color: #ff9900;
+    }
+
+    .box-1 h1 {
+        font-size: 36px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #c0bab6;
+        font-weight: lighter;
+    }
+
+    .box-1 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #c0bab6;
+    }
+
+    .second-box {
+        width: 960px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .inside-1 {
+        width: 960px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inside-1 h1 {
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        display: inline;
+        margin-left: 8px;
+
+    }
+
+    .inside-1 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        line-height: 1.6em;
+        margin-top: 10px;
+        width: 225px;
+    }
+
+    .inside-1 footer {
+        color: #ff9900;
+        float: right;
+        padding-top: 5px;
+    }
+
+    .third-box {
+        margin-bottom: 30px;
+    }
+
+    .fourth-box {
+        margin: 30px;
+    }
+
+    .inside-2 {
+        width: 960px;
+        margin-top: 30px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .inside-2 img {
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .inside-3 {
+        width: 960px;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .inside-3 a {
+        float: right;
+        color: #ff9900;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        font-weight: lighter;
+    }
+
+    .fifth-box {
+        width: 960px;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+    }
+
+    .inside-4 {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .inside-5 {
+        display: flex;
+    }
+
+    .cat img {
+        margin-right: 30px;
+    }
+
+    .cat h1 {
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        font-weight: bold;
+    }
+
+    .cat p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        margin: 13px 0px 13px 0px;
+        line-height: 1.6em;
+
+    }
+
+    .cat span {
+        color: #ff9900;
+    }
+
+    .cat footer {
+        color: #ff9900;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        float: right;
+    }
+
+    .cat {
+        width: 630px;
+        margin-right: 50px;
+    }
+
+    .inside-6 {
+        width: 280px;
+        margin-bottom: 30px;
+    }
+
+    .inside-6 h1 {
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+    }
+
+    .inside-6 li {
+        list-style-type: none;
+    }
+
+    .inside-6 a {
+        text-decoration: none;
+        padding: 5px 10px 5px 20px;
+        color: black;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .inside-6 a:hover {
+        color: #ff9900;
+    }
+
+    .last {
+        background-color: #232323;
+    }
+    .last-one{
+        width: 960px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .last-one  p {
+        color: #979797;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="box-1">
+            <div>
+                <h1>Basic 89</h1>
+                <p>Free HTML5 Website Template</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="second-box">
+        <img src="/Images/960x360.gif" width="960px" height="360px" alt="">
+    </div>
+
+
+    <div class="third-box">
+        <div class="inside-1">
+            <div>
+                <img src="/Images/32x32.gif" alt="">
+                <h1>LORUM IPSUM DOLOR</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut
+                    nisi ullamcorper.</p>
+                <footer>Read More »</footer>
+            </div>
+
+            <div>
+                <img src="/Images/32x32.gif" alt="">
+                <h1>LORUM IPSUM DOLOR</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut
+                    nisi ullamcorper.</p>
+                <footer>Read More »</footer>
+            </div>
+
+            <div>
+                <img src="/Images/32x32.gif" alt="">
+                <h1>LORUM IPSUM DOLOR</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut
+                    nisi ullamcorper.</p>
+                <footer>Read More »</footer>
+            </div>
+
+            <div>
+                <img src="/Images/32x32.gif" alt="">
+                <h1>LORUM IPSUM DOLOR</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut
+                    nisi ullamcorper.</p>
+                <footer>Read More »</footer>
+            </div>
+        </div>
+    </div>
+    <hr style="margin: auto;" width="960px">
+
+    <div class="fourth-box">
+        <div class="inside-2">
+            <div>
+                <img src="/Images/290x180.gif" alt="">
+            </div>
+
+            <div>
+                <img src="/Images/290x180.gif" alt="">
+            </div>
+
+            <div>
+                <img src="/Images/290x180.gif" alt="">
+            </div>
+        </div>
+        <div class="inside-3">
+            <a href="">View All Our Recent Work Here »</a>
+        </div>
+    </div>
+
+    <!-- <hr style="margin: aut;" width="960px"> -->
+
+    <div class="fifth-box">
+        <div class="cat">
+            <div class="inside-4">
+                <div>
+                    <img src="/Images/180x150.gif" alt="">
+                </div>
+                <div>
+                    <h1>INDONECTETUS FACILIS LEO NIBH</h1>
+                    <p>This is a W3C compliant free website template from <span>OS Templates</span>. For full terms of
+                        use
+                        of this template please read
+                        our <span>website template licence</span>.
+                    </p>
+                    <footer>Read More »</footer>
+                </div>
+            </div>
+
+
+            <div class="inside-5">
+                <div>
+                    <img src="/Images/180x150.gif" alt="">
+                </div>
+                <div>
+                    <h1>INDONECTETUS FACILIS LEO NIBH</h1>
+                    <p>This is a W3C compliant free website template from <span>OS Templates</span>. For full terms of
+                        use
+                        of this template please read
+                        our <span>website template licence</span>.
+                    </p>
+                    <footer>Read More »</footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="inside-6">
+            <h1>CATEGORIES</h1>
+            <hr style="margin-bottom: 10px;">
+            <ul>
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free Website Templates</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free CSS Teplates</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free XHTML Templates</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free Website Theme</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free Web Templates</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free Website Layouts</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free HTML5 Templates</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free Webdesign Templates</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free Fireworks Templates</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+                <li> <img src="/Images/arrow-right.svg" alt=""><a href="">Free PNG Templates</a></li>
+                <hr style="margin: 5px 0px 5px 0px;">
+            </ul>
+        </div>
+    </div>
+
+    <div class="last">
+        <div class="last-one">
+            <div>
+                <p>Copyright © 2018 - All Rights Reserved - Domain Name</p>
+            </div>
+            <div>
+               <p> Template by OS Templates</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .header {
+        background-color: #333333;
+    }
+
+    .first-box {
+        width: 960px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .box-1 h1 {
+        color: #c0bac6;
+        font-size: 36px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+    }
+
+    .box-1 p {
+        color: #c0bac6;
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    input {
+        border: 1px;
+        background-color: #232323;
+        width: 200px;
+        height: 21px;
+        border: none;
+        padding: 2px;
+    }
+
+    .ese-1 {
+        margin-top: 20px;
+    }
+
+    button {
+        background-color: #ff9900;
+        color: white;
+        width: 70px;
+        height: 23px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border: none;
+    }
+
+    .lap-1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    ul {
+        padding: 18.5px;
+        background-color: #232323;
+    }
+
+    li {
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #c0bac6;
+    }
+
+    .second-box {
+        width: 960px;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .lap-3 {
+        background-color: #464646;
+        padding: 20px;
+        height: 260px;
+    }
+
+    .lap-3 h1 {
+        font-size: 42px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #989898;
+        font-style: italic;
+        font-weight: lighter;
+    }
+
+    .lap-3 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #989898;
+        line-height: 1.6em;
+        margin: 13px 0px 13px;
+    }
+
+    .lap-3 footer {
+        font-size: 13px;
+        color: #ff9900;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        float: right;
+    }
+
+    .third-box {
+        width: 960px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .third-box h1 {
+        font-size: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        font-style: italic;
+        font-weight: lighter;
+    }
+
+    .third-box p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        margin: 13px 0px 13px;
+    }
+
+    .third-box span {
+        color: #ff9900;
+    }
+
+    .lap-4 {
+        width: 50%;
+    }
+
+    .lap-5 img {
+
+        border: 1px solid rgb(201, 199, 199);
+        padding: 4px;
+    }
+
+    .lap-5 footer {
+        margin: 15px 100px;
+        color: #ff9900;
+        cursor: pointer;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .last-box {
+        width: 960px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .last-box h1 {
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        font-style: italic;
+        padding-bottom: 8px;
+        margin-bottom: 25px;
+    }
+
+    .last-box h2 {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+
+    .last-box address {
+        font-size: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        margin-bottom: 12px;
+    }
+
+    .last-box h3 {
+        font-size: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        font-weight: lighter;
+    }
+
+    .last-box p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        margin: 13px 0px 13px;
+
+    }
+
+    .last-box footer {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ff9900;
+    }
+
+    .last-box span {
+        color: #ff9900;
+        cursor: pointer;
+    }
+
+    .about img {
+        border: 1px solid rgb(199, 198, 198);
+        padding: 4px;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .about {
+        width: 470px;
+    }
+
+    .about p {
+        display: inline;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        margin: 13px 0px 13px;
+        line-height: 1.6em;
+    }
+
+    .alt-1,
+    .alt-2 {
+        width: 225px;
+    }
+
+    .about footer {
+        float: right;
+        margin-top: 15px;
+    }
+    .last-one{
+        background-color: #232323;
+    }
+    .inside-1{
+        width: 960px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .inside-1 p{
+        color: #919191;
+        font-size: 13px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        padding: 20px 0px 20px;
+    }
+    .alt-1 p{
+     line-height: 1.6em;
+    }
+    .alt-2 img{
+        width: 10px;
+    }
+    .alt-2 p{
+        padding-bottom: 5px ;
+        margin: 5px 0px 5px 0px ;
+    }
+
+</style>
+
+<body>
+    <div class="header">
+        <div class="first-box">
+            <div class="lap-1">
+                <div class="box-1">
+                    <h1>Basic 90</h1>
+                    <p>Free HTML5 Website Template</p>
+                </div>
+                <div class="ese-1">
+                    <input type="text" name="" id="" placeholder="Search Our Website..">
+                    <button>Search</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                    <li><a href="">TEXT LINK</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="second-box">
+        <div class="lap-3">
+            <h1>Eu justo augue estas</h1>
+            <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis
+                curabitur
+                phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
+            <footer>Read More »</footer>
+        </div>
+        <div>
+            <img src="../Images/630x300.gif" alt="">
+        </div>
+    </div>
+
+    <div class="third-box">
+        <div class="lap-4">
+            <h1>Lorum ipsum dolor</h1>
+            <p>This is a W3C compliant free website template from <span>OS Templates</span>. For full terms of use of
+                this template please read
+                our <span>website template licence</span>.</p>
+            <p>You can use and modify the template for both personal and commercial use. You must keep all copyright
+                information
+                and credit links in the template and associated files. For more HTML5 templates visit <span>free website
+                    templates</span>.</p>
+        </div>
+        <div class="lap-5">
+            <img src="../Images/130x130.gif" alt="">
+            <img src="../Images/130x130.gif" alt="">
+            <img src="../Images/130x130.gif" alt="">
+            <footer>VIEW OUR IMAGE GALLERY HERE »</footer>
+        </div>
+    </div>
+    <hr width="960px" style="margin: auto;">
+
+    <div class="last-box">
+        <div class="alt-1">
+            <h1>FROM THE BLOG</h1>
+            <h2>Post Title</h2>
+            <address><span>Admin</span>, domainname.com</address>
+            <h3>Friday, 6th April 2000</h3>
+            <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
+            <footer>Read More »</footer>
+        </div>
+        <div class="alt-2">
+            <h1>QUICK LINKS</h1>
+            <p><img src=" ../Images/caret-right.svg" alt=""><span>Lorem ipsum dolor sit</span></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><span>Amet consectetur</span></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><span>Praesent vel sem id</span></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><span>Curabitur hendrerit est</span></p>
+            <hr>
+            <p><img src="../Images/caret-right.svg" alt=""><span>Sed a nulla urna</span></p>
+            <hr>
+        </div>
+        <div class="about">
+            <h1>ABOUT US</h1>
+            <img src="../Images/130x130.gif" alt="">
+            <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum
+                antequis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. <br>
+                Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.</p>
+            <br>
+            <footer>Read More »</footer>
+        </div>
+    </div>
+    <div class="last-one">
+        <div class="inside-1">
+            <div>
+                <p>Copyright © 2018 - All Rights Reserved - Domain Name</p>
+            </div>
+            <div>
+                <p>Template by OS Templates</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
