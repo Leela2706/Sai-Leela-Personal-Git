@@ -6,274 +6,367 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <style>
     * {
         margin: 0px;
         padding: 0px;
     }
 
-    .first-box {
+    .header {
         background-color: #333333;
         height: 120px;
         width: 100%;
     }
 
-    .header {
-        color: #919191;
-        font-family: 'Times New Roman', Times, serif;
+    .box-1 {
         width: 960px;
         margin: auto;
+        height: 116px;
+    }
+
+    .inside-1 {
         padding: 20px;
-        overflow: auto;
+        display: inline-block;
+
     }
 
-    .tuf li {
+    .inside-1 h1 {
+        color: #c0bab6;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-size: 36px;
+    }
+
+    .inside-1 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #c0bab6;
+    }
+
+    ul li {
         list-style-type: none;
-        display: inline;
-        float: right;
-    }
-
-    .hgroup {
-        width: 330px;
-        float: left;
-
-    }
-
-    nav {
-        width: 500px;
-        float: right;
-        margin-top: 20px;
-        border: 1px solid;
-        padding: 10px;
-    }
-
-    .second-box {
-        width: 960px;
-        background-color: #333333;
-        height: 360px;
-        color: #D6D6D6;
-        margin: auto;
-        margin-top: 30px;
+        display: inline-block;
+        padding: 15px 15px 15px 15px;
         text-align: center;
     }
 
-    .third-box {
+    ul li a {
+        color: #C0BAB6;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    nav {
+        display: block;
+        float: right;
+        color: #C0BAB6;
+        background-color: #232323;
+        margin-top: 25px;
+    }
+
+    a:hover {
+        color: orange;
+    }
+
+    .box-2 {
         width: 960px;
         margin: auto;
-        overflow: auto;
         margin-top: 30px;
     }
 
-    .img-1 {
-        float: left;
-        margin-right: 20px;
-        border: 1px solid #D6D6D6;
-        padding: 4px;
-    }
-
-    .img-2 {
-        float: left;
-        border: 1px solid #D6D6D6;
-        padding: 4px;
-        margin-left: 40px;
-    }
-
-    .img-3 {
-        float: right;
-        border: 1px solid #D6D6D6;
-        padding: 4px;
-    }
-
-    .lap-1 {
-        width: 290px;
-        float: left;
-    }
-
-    .lap-1 h1 {
-        color: #979797;
-        font-size: 14px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: italic;
-    }
-
-    .lap-1 p {
-        color: #919191;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 13px;
-        line-height: 2;
-    }
-
-    .lap-2 {
-        width: 290px;
-        float: left;
-    }
-
-    .lap-2 h1 {
-        color: #979797;
-        font-size: 14px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        margin-left: 40px;
-        font-style: italic;
-    }
-
-    .lap-2 p {
-        color: #919191;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        margin-left: 40px;
-        font-size: 13px;
-        line-height: 2;
-    }
-
-    .lap-3 {
-        width: 290px;
-        float: right;
-    }
-
-    .lap-3 h1 {
-        color: #979797;
-        font-size: 14px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: italic;
-
-    }
-
-    .lap-3 p {
-        color: #919191;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 13px;
-        line-height: 2;
-
-    }
-
-    footer {
-        color: orange;
-        float: right;
-    }
-
-    .forth-box {
+    .box-3 {
         width: 960px;
         margin: auto;
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
-    .dts {
-        width: 50%;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 25px;
+    .inside-2 {
+        float: left;
     }
 
-    .img-450 {
-        width: 50%;
-        display: inline;
+    .inside-2 img {
+        border: 1px solid grey;
+        padding: 4px;
     }
 
-
-    .dts h1 {
-        font-size: 32px;
-        color: #979797;
-        font-style: italic;
+    .inside-2 h1 {
+        font-size: 14px;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: lighter;
-
+        color: #919191;
+        font-style: italic;
+        margin-top: 10px;
     }
 
-    .dts p {
+    .inside-2 p {
         font-size: 13px;
-        color: #979797;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        line-height: 2;
+        color: #919191;
+        margin-top: 13px;
     }
 
-    .dts a {
-        color: orange;
-        cursor: pointer;
-    }
-
-    .hyper {
-        width: 100%;
-        background-color: #232323;
-        height: 200px;
-        margin: auto;
-        overflow: auto;
-        float: left;
-    }
-
-    .key1 h2 {
-        color: #ffffff;
-        font-size: 13px;
-        font-family: 'Times New Roman', Times, serif;
-        font-style: italic;
-    }
-
-    .key1 {
-        width: fit-content;
-        float: left;
-    }
-    .key2 h2 {
-        color: #ffffff;
-        font-size: 13px;
-        font-family: 'Times New Roman', Times, serif;
-        font-style: italic;
-    }
-
-    .key2 {
-        width: fit-content;
-        float: left;
-        margin-left: 150px;
-    }
-
-    .key3 h2 {
-        color: #ffffff;
-        font-size: 13px;
-        font-family: 'Times New Roman', Times, serif;
-        font-style: italic;
-    }
-
-    .key3 {
-        width: fit-content;
-        float: left;
-        margin-left: 200px;
-    }
-
-    .key4 h2 {
-        color: #ffffff;
-        font-size: 13px;
-        font-family: 'Times New Roman', Times, serif;
-        font-style: italic;
-    }
-
-    .key4 {
-        width: fit-content;
+    .inside-2 footer {
         float: right;
-        margin-left: 50px;
-    
+        color: orange;
+        margin-top: 13px;
+
     }
 
-    .board li {
-        list-style-type: none;
+
+
+
+
+
+    .inside-3 {
+        float: left;
+        margin-left: 30px;
+    }
+
+    .inside-3 img {
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .inside-3 h1 {
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    .inside-3 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+        margin-top: 13px;
+    }
+
+    .inside-3 footer {
+        float: right;
+        color: orange;
+        margin-top: 13px;
+
+    }
+
+
+
+
+    .inside-4 {
+        float: left;
+        margin-left: 30px;
+    }
+
+    .inside-4 img {
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .inside-4 h1 {
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    .inside-4 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+        margin-top: 13px;
+    }
+
+    .inside-4 footer {
+        float: right;
+        color: orange;
+        margin-top: 13px;
+    }
+
+    .inside-5 {
+        float: left;
+        height: 255px;
+        margin-right: 60px;
+    }
+
+    .box-4 {
+        width: 960px;
+        margin: auto;
+        margin-top: 360px;
+    }
+
+    .box-4 img {
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .inside-5 h1 {
+        font-size: 32px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+        font-style: italic;
+        font-weight: lighter;
+    }
+
+    .inside-5 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+        line-height: 1.6em;
+    }
+
+    .inside-5 span {
         color: #ff9900;
+    }
+
+    .inside-5 img {
+        float: right;
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .inside-5 footer {
+        color: #ff9900;
+        float: right;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .main-box {
+        height: 250px;
+        background-color: #333333;
+    }
+
+    .box-5 {
+        width: 960px;
+        margin: auto;
+        border: 2px solid #333333;
+        height: 220px;
+    }
+
+    .inside-6 {
+        float: left;
+        margin-top: 20px;
+        line-height: 1.6em;
+        width: 225px;
+    }
+
+    .inside-6 h1 {
         font-size: 12px;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff;
+        font-weight: bold;
     }
-    .cool{
+
+    .inside-6 p {
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ff9900;
+
+    }
+
+
+    .inside-7 {
+        float: left;
+        margin-top: 20px;
+        line-height: 1.6em;
+        width: 225px;
+        margin-left: 20px;
+    }
+
+    .inside-7 h1 {
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .inside-7 p {
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ff9900;
+
+    }
+
+
+    .inside-8 {
+        float: left;
+        margin-top: 20px;
+        line-height: 1.6em;
+        width: 225px;
+        margin-left: 20px;
+    }
+
+    .inside-8 h1 {
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .inside-8 p {
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ff9900;
+
+    }
+
+
+    .inside-9 {
+        float: right;
+        margin-top: 20px;
+        line-height: 1.6em;
+        width: 225px;
+    }
+
+    .inside-9 h1 {
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .inside-9 p {
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ff9900;
+
+    }
+
+    .end-box {
+        background-color: #232323;
+        height: 55px;
+    }
+
+    .inside-10 {
         width: 960px;
         margin: auto;
-        height: 500px;
-        border: 2px solid;
+        padding: 20px;
+    }
+    .inside-10 p{
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+    }
+    .lap{
+        float: left;
+    }
+    .top{
+        float: right;
     }
 </style>
 
 <body>
-    <div class="first-box">
-        <div class="header">
-            <div class="hgroup">
+    <div class="header">
+        <div class="box-1">
+            <div class="inside-1">
                 <h1>Basic 88</h1>
                 <p>Free HTML5 Website Template</p>
             </div>
 
             <nav>
-                <ul class="tuf">
+                <ul>
                     <li><a href="">TEXT LINK</a></li>
                     <li><a href="">TEXT LINK</a></li>
                     <li><a href="">TEXT LINK</a></li>
@@ -283,101 +376,128 @@
             </nav>
         </div>
     </div>
-
-    <div class="second-box">
-        <h1>960 X 360px</h1>
+    <div class="box-2">
+        <img src="/Images/960x360.gif" alt="">
     </div>
 
-    <div class="third-box">
-        <div class="lap-1">
-            <img class="img-1" src="./290x180.gif" alt="">
-            <h1>Indonectetus facilis</h1>
-            <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
-            <br>
+
+    <div class="box-3">
+        <div class="inside-2">
+            <img src="/Images/290x180.gif" alt="">
+            <h1> Indonectetus facilis</h1>
+            <p>Nullamlacus dui ipsum conseque loborttis non <br> euisque morbi penas dapibulum orna.</p>
             <footer>Read More »</footer>
         </div>
 
-        <div class="lap-2">
-            <img class="img-2" src="./290x180.gif" alt="">
-            <h1>Indonectetus facilis</h1>
-            <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
-            <br>
+        <div class="inside-3">
+            <img src="/Images/290x180.gif" alt="">
+            <h1> Indonectetus facilis</h1>
+            <p>Nullamlacus dui ipsum conseque loborttis non <br> euisque morbi penas dapibulum orna.</p>
             <footer>Read More »</footer>
         </div>
 
-        <div class="lap-3">
-            <img class="img-3" src="./290x180.gif" alt="">
-            <h1>Indonectetus facilis</h1>
-            <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna.</p>
-            <br>
+        <div class="inside-4">
+            <img src="/Images/290x180.gif" alt="">
+            <h1> Indonectetus facilis</h1>
+            <p>Nullamlacus dui ipsum conseque loborttis non <br> euisque morbi penas dapibulum orna.</p>
             <footer>Read More »</footer>
         </div>
     </div>
 
-
-    <div class="forth-box">
-        <div class="dts">
-            <h1>Indonectetus facilis leo nibh</h1>
-            <p>This is a W3C compliant free website template from <a>OS Templates</a>. For full terms of use of this
-                template please
-                read our <a> website template licence</a>.</p>
-            <br>
-            <p>You can use and modify the template for both personal and commercial use. You must keep all copyright
-                information
-                and credit links in the template and associated files. For more HTML5 templates visit <a>free website
-                    templates</a>.</p>
+    <div class="box-4">
+        <div class="inside-5">
+            <h1>Indonectetus facilis leo nibh</h1> <br>
+            <p>This is a W3C compliant free website template from <span>OS Templates</span>. For full <br> terms of use
+                of this template please
+                read our <span>website template licence</span>.</p> <br>
+            <p>You can use and modify the template for both personal and commercial use. <br> You must keep all
+                copyright information
+                and credit links in the template and <br> associated files. For more HTML5 templates visit <span>free
+                    website templates</span>.</p> <br>
             <footer>Read More »</footer>
         </div>
-        <div class="img-450">
-            <img src="./450x250.gif" alt="">
-        </div>
+        <img src="/Images/450x250.gif" alt="">
     </div>
 
 
-    <div class="hyper">
-        <div class="cool">
-            <div class="key1">
-                <h2>LINK BLOCK</h2>
-                <ul class="board">
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Amet consectetur</li>
-                    <li>Praesent vel sem id</li>
-                    <li>Curabitur hendrerit est</li>
-                    <li>Sed a nulla urna</li>
-                </ul>
+    <div class="main-box">
+        <div class="box-5">
+            <div class="inside-6">
+                <h1>LINK BLOCK</h1>
+                <br>
+                <p> Lorem ipsum dolor sit</p>
+                <hr>
+                <p> Amet consectetur</p>
+                <hr>
+                <p> Praesent vel sem id</p>
+                <hr>
+                <p> Curabitur hendrerit est </p>
+                <hr>
+                <p> Sed a nulla urna</p>
+                <hr>
             </div>
-            <div class="key2">
-                <h2>LINK BLOCK</h2>
-                <ul class="board">
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Amet consectetur</li>
-                    <li>Praesent vel sem id</li>
-                    <li>Curabitur hendrerit est</li>
-                    <li>Sed a nulla urna</li>
-                </ul>
+
+
+            <div class="inside-7">
+                <h1>LINK BLOCK</h1>
+                <br>
+                <p> Lorem ipsum dolor sit</p>
+                <hr>
+                <p> Amet consectetur</p>
+                <hr>
+                <p> Praesent vel sem id</p>
+                <hr>
+                <p> Curabitur hendrerit est </p>
+                <hr>
+                <p> Sed a nulla urna</p>
+                <hr>
             </div>
-            <div class="key3">
-                <h2>LINK BLOCK</h2>
-                <ul class="board">
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Amet consectetur</li>
-                    <li>Praesent vel sem id</li>
-                    <li>Curabitur hendrerit est</li>
-                    <li>Sed a nulla urna</li>
-                </ul>
+
+
+            <div class="inside-8">
+                <h1>LINK BLOCK</h1>
+                <br>
+                <p> Lorem ipsum dolor sit</p>
+                <hr>
+                <p> Amet consectetur</p>
+                <hr>
+                <p> Praesent vel sem id</p>
+                <hr>
+                <p> Curabitur hendrerit est </p>
+                <hr>
+                <p> Sed a nulla urna</p>
+                <hr>
             </div>
-            <div class="key4">
-                <h2>LINK BLOCK</h2>
-                <ul class="board">
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Amet consectetur</li>
-                    <li>Praesent vel sem id</li>
-                    <li>Curabitur hendrerit est</li>
-                    <li>Sed a nulla urna</li>
-                </ul>
+
+
+            <div class="inside-9">
+                <h1>LINK BLOCK</h1>
+                <br>
+                <p> Lorem ipsum dolor sit</p>
+                <hr>
+                <p> Amet consectetur</p>
+                <hr>
+                <p> Praesent vel sem id</p>
+                <hr>
+                <p> Curabitur hendrerit est </p>
+                <hr>
+                <p> Sed a nulla urna</p>
+                <hr>
             </div>
         </div>
     </div>
+
+    <div class="end-box">
+        <div class="inside-10">
+            <div class="lap">
+                <p>Copyright © 2018 - All Rights Reserved - Domain Name</p>
+            </div>
+            <div class="top">
+                <p>Template by OS Templates</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

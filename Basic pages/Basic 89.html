@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .box-1 {
+        background-color: #333333;
+        height: 80px;
+        padding: 20px;
+    }
+
+    .lap-1 {
+        width: 960px;
+        margin: auto;
+    }
+
+    .lap-2 {
+        float: left;
+        color: #C0BAB6;
+    }
+
+    .lap-2 h1 {
+        font-size: 36px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+    }
+
+    .lap-2 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 15px 15px 0px 10px;
+        text-align: center;
+    }
+
+    ul li a {
+        color: #C0BAB6;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+
+    nav {
+        display: block;
+        float: right;
+        padding: 0px 0px 15px 5px;
+        color: #C0BAB6;
+        background-color: #232323;
+        margin-top: 10px;
+    }
+
+    a:hover {
+        color: orange;
+    }
+
+    .box-2 {
+        width: 960px;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .text-box {
+        width: 960px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .text-box1 {
+        width: 225px;
+        float: left;
+    }
+
+    .text-box1 img {
+        float: left;
+    }
+
+    .text-box1 h2 {
+        color: #979797;
+        float: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    .text-box1 p {
+        width: 250px;
+        color: #979797;
+        padding-top: 35px;
+        font-size: 13px;
+        line-height: 1.6em;
+    }
+
+    footer {
+        color: orange;
+        float: right;
+    }
+
+    .text-box2 {
+        width: 225px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .text-box2 img {
+        float: left;
+    }
+
+    .text-box2 h2 {
+        color: #979797;
+        float: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .text-box2 p {
+        width: 250px;
+        color: #979797;
+        padding-top: 35px;
+        font-size: 13px;
+        line-height: 1.6em;
+    }
+
+    footer {
+        color: orange;
+        float: right;
+    }
+
+
+
+
+    .text-box3 {
+        width: 225px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .text-box3 img {
+        float: left;
+    }
+
+    .text-box3 h2 {
+        color: #979797;
+        float: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .text-box3 p {
+        width: 250px;
+        color: #979797;
+        padding-top: 35px;
+        font-size: 13px;
+        line-height: 1.6em;
+    }
+
+    footer {
+        color: orange;
+        float: right;
+    }
+
+
+
+    .text-box4 {
+        width: 225px;
+        float: right;
+    }
+
+    .text-box4 img {
+        float: left;
+    }
+
+    .text-box4 h2 {
+        color: #979797;
+        float: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .text-box4 p {
+        width: 250px;
+        color: #979797;
+        padding-top: 35px;
+        font-size: 13px;
+        line-height: 1.6em;
+    }
+
+    footer {
+        color: orange;
+        float: right;
+    }
+
+    .third-box {
+        width: 960px;
+        margin: auto;
+        margin-top: 70px;
+    }
+
+    .img-box1 {
+        float: left;
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .img-box2 {
+        float: left;
+        margin-left: 30px;
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .img-box3 {
+        float: right;
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .third-box footer a {
+        color: orange;
+        text-decoration: none;
+    }
+
+    .third-box footer {
+        margin-top: 20px;
+    }
+
+    .hrr hr {
+        width: 960px;
+        margin-top: 50px;
+    }
+
+    .rr {
+        width: 960px;
+        margin: auto;
+        /* border: 2px solid; */
+        margin-top: 360px;
+    }
+
+    .line {
+        width: 960px;
+        margin: auto;
+        /* border: 2px solid; */
+        margin-top: 250px;
+    }
+
+    #fourthbox {
+
+        width: 960px;
+        height: 480px;
+        margin: auto;
+        /* border: 2px solid; */
+        margin-top: 50px;
+    }
+
+    .press-1 {
+        float: left;
+        /* width: fit-content; */
+        /* border: 1px solid; */
+    }
+
+    .tuf-1 {
+        width: 180px;
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .tuf-2 {
+        margin-top: 30px;
+        border: 1px solid grey;
+        padding: 4px;
+        width: 180px;
+    }
+
+    .press-2 {
+        /* border: 1px solid; */
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+
+    .tuf-3 h1 {
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+        margin-bottom: 12px;
+    }
+
+    .tuf-3 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        line-height: 1.6em;
+    }
+
+    .tuf-3 footer a {
+        color: orange;
+        text-decoration: none;
+    }
+
+    .tuf-3 p span {
+        color: orange;
+    }
+
+    .press-3 {
+        margin-left: 25px;
+        margin-top: 85px;
+    }
+
+
+    .tuf-4 h1 {
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+        margin-bottom: 12px;
+    }
+
+    .tuf-4 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        line-height: 1.6em;
+    }
+
+    .tuf-4 footer a {
+        color: orange;
+        text-decoration: none;
+    }
+
+    .tuf-4 p span {
+        color: orange;
+    }
+
+    .press-4 {
+        float: left;
+        margin-left: 80px;
+        /* border: 1px solid; */
+        height: 350px;
+        width: 257px;
+    }
+
+    #middle {
+        float: left;
+    }
+
+    .tuf-5 h1 {
+        color: #979797;
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+
+    .enter li a {
+        color: #232323;
+        font-size: 10px;
+
+    }
+
+    .enter hr {
+        border-bottom: 1px dotted;
+        margin-top: 3px;
+    }
+
+    .enter li a:hover {
+        color: orange;
+    }
+
+    .aura {
+        background-color: #232323;
+        border: 1px solid;
+        margin-top: 0px;
+    }
+    .pause{
+        width: 960px;
+        height: 50px;
+        margin: auto;
+        
+    }
+
+    .pause-1 {
+        color: #919191;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        float: left;
+        padding-top: 20px;
+    }
+    .pause-2{
+        color: #919191;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        float: right;
+        padding-top: 20px;
+        
+    }
+
+</style>
+
+<body>
+    <div class="box-1">
+        <div class="lap-1">
+            <div class="lap-2">
+                <h1>Basic 89</h1>
+                <p>Free HTML5 Website Template </p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Text Link</a></li>
+                    <li><a href="">Text Link</a></li>
+                    <li><a href="">Text Link</a></li>
+                    <li><a href="">Text Link</a></li>
+                    <li><a href="">Text Link</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <div class="box-2">
+        <img src="/Images/960x360.gif" alt="">
+    </div>
+    <div class="text-box">
+        <div class="text-box1">
+            <img src="/Images/32x32.gif" alt="">
+            <h2>LORUM IPSUM DOLOR </h2>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.
+                Nunc non <br> diam erat. In fringilla massa ut nisi ullamcorper.</p>
+            <footer>Read More »</footer>
+        </div>
+
+        <div class="text-box2">
+            <img src="/Images/32x32.gif" alt="">
+            <h2>LORUM IPSUM DOLOR </h2>
+            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.
+                Nunc non <br> diam erat. In fringilla massa ut nisi ullamcorper.</p>
+            <footer>Read More »</footer>
+        </div>
+
+        <div class="text-box3">
+            <img src="/Images/32x32.gif" alt="">
+            <h2>LORUM IPSUM DOLOR </h2>
+            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.
+                Nunc non <br> diam erat. In fringilla massa ut nisi ullamcorper.</p>
+            <footer>Read More »</footer>
+        </div>
+
+        <div class="text-box4">
+            <img src="/Images/32x32.gif" alt="">
+            <h2>LORUM IPSUM DOLOR </h2>
+            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.
+                Nunc non <br> diam erat. In fringilla massa ut nisi ullamcorper.</p>
+            <footer>Read More »</footer>
+        </div>
+    </div>
+
+    <div class="line">
+        <hr>
+
+    </div>
+
+
+
+    <div class="third-box">
+        <div class="img-box1">
+            <img src="/Images/290x180.gif" alt="">
+        </div>
+        <div class="img-box2">
+            <img src="/Images/290x180.gif" alt="">
+        </div>
+        <div class="img-box3">
+            <img src="/Images/290x180.gif" alt="">
+        </div>
+        <footer><a href="">View All Our Recent Work Here »</a></footer>
+
+
+    </div>
+
+    <div class="rr">
+        <hr>
+    </div>
+
+    <div id="fourthbox">
+
+
+        <div class="press-1">
+            <div class="tuf-1">
+                <img src="/Images/180x150.gif" alt="">
+            </div>
+            <div class="tuf-2">
+                <img src="/Images/180x150.gif" alt="">
+            </div>
+        </div>
+
+        <div id="middle">
+            <div class="press-2">
+                <div class="tuf-3">
+                    <h1>INDONECTETUS FACILIS LEO NIBH</h1>
+                    <p>This is a W3C compliant free website template from <span>OS Templates</span>. For <br>
+                        full terms of use of this template please read our <span>website template <br> licence</span>.
+                    </p>
+                    <footer><a href="">Read More »</a></footer>
+                </div>
+
+            </div>
+            <div class="press-3">
+                <div class="tuf-4">
+                    <h1>INDONECTETUS FACILIS LEO NIBH</h1>
+                    <p>This is a W3C compliant free website template from <span>OS Templates</span>. For <br>
+                        full terms of use of this template please read our <span>website template <br> licence</span>.
+                    </p>
+                    <footer><a href="">Read More »</a></footer>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="press-4">
+            <div class="tuf-5">
+                <h1>CATEGORIES</h1>
+            </div>
+            <hr>
+
+            <ul class="enter">
+                <li><a href=""><img src="/Images/arrow-right.svg" alt=""> Free Website Templates</a></li>
+                <hr>
+                <li><a href=""><img src="./Images/arrow-right.svg" alt=""> Free CSS Templates</a></li>
+                <hr>
+                <li><a href=""> <img src="/Images/arrow-right.svg" alt=""> Free XHTML Templates</a></li>
+                <hr>
+                <li><a href=""><img src="/Images/arrow-right.svg" alt="">Free Web Templates</a></li>
+                <hr>
+                <li><a href=""><img src="/Images/arrow-right.svg" alt="">Free Website Layouts </a></li>
+                <hr>
+                <li><a href=""><img src="/Images/arrow-right.svg" alt="">Free HTML5 Templates</a></li>
+                <hr>
+                <li><a href=""><img src="/Images/arrow-right.svg" alt="">Free Webdesign Templates</a></li>
+                <hr>
+                <li><a href=""><img src="/Images/arrow-right.svg" alt="">Free FireWorks Templates</a></li>
+                <hr>
+                <li><a href=""><img src="/Images/arrow-right.svg" alt="">Free PNG Templates</a></li>
+                <hr>
+                <li><a href=""><img src="./Images/arrow-right.svg" alt="">Free Website Themes</a></li>
+                <hr>
+            </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="aura">
+        <div class="pause">
+            <div class="pause-1">
+                <p>Copyright © 2018 - All Rights Reserved - Domain Name</p>
+            </div>
+            <div class="pause-2">
+                <p>Template by OS Templates</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

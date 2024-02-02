@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .just {
+        background-color: #333333;
+        height: 170px;
+    }
+
+    .now {
+        width: 960px;
+        margin: auto;
+        height: 50px;
+        padding: 20px;
+        /* border: 2px solid yellow; */
+    }
+
+    .tab-1 {
+        float: left;
+    }
+
+    .tab-1 h1 {
+        font-size: 36px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #c0bab6;
+        font-weight: lighter;
+    }
+
+    .tab-1 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #c0bab6;
+    }
+
+    .tab-2 {
+        float: right;
+        padding-top: 20px;
+    }
+
+    .tab-2 input {
+        border: 1px solid;
+        padding-left: 2px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border-color: #9d9c9a;
+        background-color: #232323;
+        width: 205px;
+        height: 25px;
+    }
+
+    .tab-2 button {
+        width: 70px;
+        height: 23px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 5px;
+        background-color: #ff9900;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 12px;
+        border: none;
+    }
+
+    .tab-3 {
+        width: 960px;
+        margin: auto;
+        height: 34px;
+        border: 5px solid #232323;
+        background-color:#232323;
+        margin-top: 0px;
+        padding: 15px 0px 0px 0px;
+    }
+
+    .tab-3 ul li a {
+        text-decoration: none;
+        padding: 10px;
+        color: #c0bab6;
+    }
+
+    .tab-3 ul li {
+        display: inline;
+
+    }
+
+    .tab-3 ul {
+        list-style: none;
+
+
+    }
+
+    .tab-3 ul li a:hover {
+        color: orange;
+    }
+
+    .box-2 {
+        width: 960px;
+        margin: auto;
+    }
+
+    .tab-4 {
+        background-color: #464646;
+        margin-top: 30px;
+        width: 330px;
+        padding: 20px 20px 50px 20px;
+        display: block;
+        float: left;
+
+    }
+
+    .tab-4 h1 {
+        font-size: 42px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        color: #989898;
+    }
+
+    .tab-4 p {
+        color: #989898;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 1.6em;
+
+    }
+
+    .tab-4 footer {
+        float: right;
+        color: orange;
+        cursor: pointer;
+    }
+
+    .tab-5 {
+        float: right;
+        margin-top: 30px;
+    }
+
+    .tab-5 img {
+        width: 590px;
+        height: 288px;
+    }
+
+    .box-3 {
+        width: 960px;
+        margin: auto;
+        margin-top: 350px;
+        margin-bottom: 70px;
+
+    }
+
+    .tab-6 {
+        width: fit-content;
+        float: left;
+    }
+
+    .tab-6 h1 {
+        font-size: 22px;
+        font-style: italic;
+        color: #979797;
+        font-weight: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    .tab-6 p {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+    }
+
+    .tab-6 p span {
+        color: orange;
+    }
+
+    .tab-7 img {
+        padding: 0px 0px 0px 32px;
+
+    }
+
+    .tab-7 footer {
+        float: right;
+        padding-top: 15px;
+        color: orange;
+        cursor: pointer;
+        padding-right: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .rrr {
+        width: 960px;
+        margin: auto;
+    }
+
+    .gaming {
+        width: 225px;
+        float: left;
+        margin-right: 20px;
+    }
+
+
+    .tab-8 {
+        width: 960px;
+        margin: auto;
+        height: 226px;
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+
+    .tab-8 h1 {
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+        font-style: italic;
+        margin-bottom: 25px;
+    }
+
+    .tab-8 p {
+        color: #979797;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .admin {
+        font-size: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+    }
+
+    .com {
+        color: #ff9900;
+    }
+
+    .friday {
+        font-size: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        line-height: 5em;
+        font-style: normal;
+    }
+
+    .nulla {
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        line-height: 1.6em;
+    }
+
+    .tab-8 footer {
+        float: left;
+        color: #ff9900;
+    }
+
+    .tab-9 {
+        width: 225px;
+        display: inline-block;
+    }
+
+    .tab-9 img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .tab-9 p {
+        line-height: 2.5em;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ff9900;
+    }
+
+    .tab-10 {
+        float: right;
+    }
+
+    .tab-10 img {
+        float: left;
+        border: 1px solid grey;
+        padding: 4px;
+    }
+
+    .tab-10 p {
+        float: right;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #979797;
+        line-height: 1.6em;
+        padding-left: 15px;
+    }
+
+    .tab-10 footer {
+        margin-top: 39px;
+        float: right;
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ff9900;
+    }
+
+    .box-5 {
+        background-color: #232323;
+    }
+
+    .tab-11 {
+        width: 960px;
+        margin: auto;
+        padding: 25px;
+        height: 15px;
+    }
+    .tab-12{
+        float: left;
+    }
+    .tab-11 p{
+        font-size: 13px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #919191;
+    }
+    .last{
+        float: right;
+    }
+</style>
+
+<body>
+    <div class="just">
+        <div class="now">
+            <div class="tab-1">
+                <h1>Basic 90</h1>
+                <p>Free HTML5 Website Template</p>
+            </div>
+            <div class="tab-2">
+                <input placeholder="Search Our Website.." type="text">
+                <button>SUBMIT</button>
+            </div>
+        </div>
+        <div class="tab-3">
+            <ul>
+                <li><a href="">TEXT LINK</a></li>
+                <li><a href="">TEXT LINK</a></li>
+                <li><a href="">TEXT LINK</a></li>
+                <li><a href="">TEXT LINK</a></li>
+                <li><a href="">TEXT LINK</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="box-2">
+        <div class="tab-4">
+            <h1>Eu justo augue
+                <br>estas
+            </h1>
+            <p>Nullamlacus dui ipsum conseque loborttis non <br> euisque morbi penas dapibulum orna. <br>
+                Urnaultrices quis curabitur phasellentesque <br> congue magnis vestibulum quismodo nulla et <br>
+                feugiat adipiscinia pellentum leo.</p>
+            <footer>Read More »</footer>
+        </div>
+        <div class="tab-5">
+            <img src="/Images/630x300.gif" alt="">
+        </div>
+    </div>
+
+    <div class="box-3">
+        <div class="tab-6">
+            <h1>Lorum ipsum dolor</h1>
+            <p>This is a W3C compliant free website template from <span>OS Templates</span>. For full terms <br> of use
+                of this template
+                please read our <span>website template licence</span>.</p>
+            <br>
+            <p>You can use and modify the template for both personal and commercial use. You <br> must keep all
+                copyright information
+                and credit links in the template and <br> associated files. For more HTML5 templates visit
+                <span>free website templates</span>.
+            </p>
+        </div>
+
+        <div class="tab-7">
+            <img src="/Images/130x130.gif" alt="">
+            <img src="/Images/130x130.gif" alt="">
+            <img src="/Images/130x130.gif" alt="">
+            <footer>VIEW OUR IMAGE GALLERY HERE »</footer>
+        </div>
+    </div>
+    <hr class="rrr">
+
+    <div class="box-4">
+        <div class="tab-8">
+            <div class="gaming">
+                <h1>FROM THE BLOG</h1>
+                <p>Post Title</p>
+                <address>
+                    <span class="admin"> <span class="com"> Admin</span>, domainname.com</span> <br>
+                    <span class="friday"> Friday, 6th April 2000</span> <br>
+                    <span class="nulla">Nulla facilisi. Ut fringilla. Suspendisse <br> potenti. Nunc feugiat mi a tellus
+                        <br> consequat imperdiet.</span> <br> <br>
+                    <footer>Read More »</footer>
+                </address>
+            </div>
+
+            <div class="tab-9">
+                <h1>QUICK LINKS</h1>
+                <p><img src="/Images/caret-right.svg" alt="">Lorem ipsum dolor sit</p>
+                <hr>
+                <p><img src="/Images/caret-right.svg" alt="">Amet consectetur</p>
+                <hr>
+                <p><img src="/Images/caret-right.svg" alt="">Praesent vel sem id</p>
+                <hr>
+                <p><img src="/Images/caret-right.svg" alt="">Curabitur hendrerit est</p>
+                <hr>
+                <p><img src="/Images/caret-right.svg" alt="">Sed a nulla urna</p>
+                <hr>
+            </div>
+
+
+            <div class="tab-10">
+                <h1>ABOUT US</h1>
+                <img src="/Images/130x130.gif" alt="">
+                <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis,<br> tortor neque adipiscing diam, a
+                    cursus ipsum ante quis <br> turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. <br> Nunc
+                    feugiat mi a tellus consequat imperdiet. <br> Vestibulum sapien. Proin quam. Etiam ultrices. <br>
+                    Suspendisse in justo eu magna luctus suscipit.</p>
+                <br>
+                <footer>Read More »</footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-5">
+        <div class="tab-11">
+            <div class="tab-12">
+                <p>Copyright © 2018 - All Rights Reserved - Domain Name</p>
+            </div>
+            <div class="last">
+                <p>Template by OS Templates</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
