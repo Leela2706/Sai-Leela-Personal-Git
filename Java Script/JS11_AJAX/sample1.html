@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <button onclick="getDataFromServer()">Get Data</button>
+
+    <script>
+        function getDataFromServer(){
+            var getDataObj = new XMLHttpRequest();
+            getDataObj.onreadystatechange = function (){
+                if(getDataObj.readyState == 4 && getDataObj.status == 200){
+                    var recevivedData = JSON.parse(getDataObj.response)
+                    console.log(recevivedData)
+                }
+            }
+            getDataObj.open("GET","http://localhost:3000/users")
+            getDataObj.send()
+        }
+    </script>
+</body>
+</html>
