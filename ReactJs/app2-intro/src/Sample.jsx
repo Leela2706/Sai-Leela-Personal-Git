@@ -108,6 +108,8 @@ export class Sample1 extends Component {
             })}
           </tbody>
         </table>
+        <hr />
+        <hr />
       </div>
     );
   }
