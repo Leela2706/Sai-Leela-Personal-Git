@@ -10,15 +10,16 @@ export class Sample2 extends Component {
             WebSite: "",
             Message: ''
         },
+        index: null,
         allUser: [],
         showUpdatebtn: false,
     }
     handleChange = (e) => {
         const inputName = e.target.name;
-        console.log(inputName);
-
         const newState = { ...this.state };
-        newState.userDetails[inputName] = e.target.value;
+        const newStateobj = { ...this.state.userDetails };
+        newStateobj[inputName] = e.target.value;
+        newState.userDetails = newStateobj
         this.setState(newState);
     };
     addUser = () => {
@@ -45,11 +46,18 @@ export class Sample2 extends Component {
         this.setState(newState);
     };
 
-    edituser = (obj) => {
-        const newState = { ...this.state.userDetails }
+    edituser = (obj, i) => {
+        const newState = { ...this.state }
         newState.userDetails = obj
-        newState.showUpdatebtn=true;
-        this.setState(newState)
+        newState.showUpdatebtn = true;
+        newState.index = i ;
+        this.setState(newState);
+    }
+    handleUpdate = () => {
+        const newStateUsers = { ...this.state.allUser };
+        newStateUsers[this.state.index] = this.state.userDetails;
+        this.setState({allUser:newStateUsers,index:null})
+        this.clearForm();
     }
 
     render() {
@@ -68,14 +76,14 @@ export class Sample2 extends Component {
                 <input type="text" name="Message" id="" placeholder="Type Your Message Here" className="message" value={this.state.userDetails.Message} onChange={this.handleChange} />
                 <br />
 
-                {this.state.showUpdatebtn ? (
-                    <button type="button" onClick={this.addUser}>updateuser</button>
+                {/* {this.state.index !== null ? (
+                    <button type="button" onClick={this.handleUpdate}>updateuser</button>
                 ) : (
                     <button type="button" onClick={this.addUser}>add user</button>
-                )}
-
-
-
+                )} */}
+                <p>{this.state.index}</p>
+                {this.state.index === null && <button type="button" onClick={this.addUser}>add user</button>}
+                {this.state.index !== null && <button type="button" onClick={this.handleUpdate}>updateuser</button>}
             </form>
             <br />
             <table border={2}>
@@ -103,7 +111,7 @@ export class Sample2 extends Component {
                                     <button
                                         type="button"
                                         onClick={() => {
-                                            this.edituser(obj);
+                                            this.edituser(obj, i);
                                         }}
                                     >
                                         edituser
