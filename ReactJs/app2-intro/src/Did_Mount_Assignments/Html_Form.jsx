@@ -8,7 +8,7 @@ export default class Html_Form extends Component {
           <div>
             <label>
               Name:
-              <input type="text" name="name" value={Name} onChange={this.handleChange} />
+              <input type="text" name="name" value={name} onChange={this.handleChange} />
             </label>
           </div>
           <div>
