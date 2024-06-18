@@ -8,8 +8,8 @@ function App() {
   return <div>
     {/* <Sample1/> */}
     {/* <Sample2/> */}
-    {/* <Html_Form/> */}
-    <SimpleForm/>
+    <Html_Form/>
+    {/* <SimpleForm/> */}
     
   </div>
 

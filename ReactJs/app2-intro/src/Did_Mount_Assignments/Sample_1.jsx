@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import"./Form.css";
-import Form from "./Html_Form";
 import Table from "./Table";
 import Html_Form from "./Html_Form";
 class SimpleForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
+      name: "Leela",
       email: "",
       data: [],
     };
@@ -38,7 +37,7 @@ class SimpleForm extends Component {
 
     return (
       <div>
-        <Html_Form/>
+        <Html_Form />
         <Table />
       </div>
     );
