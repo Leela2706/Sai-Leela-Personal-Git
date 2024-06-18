@@ -5,7 +5,7 @@ export class EmployeeTimeTracker extends Component {
   state = {
     persons: [
       {
-        employeename: "dinesh",
+        employeename: "Deepak Kumar",
         date: "27/6/2006",
         starttime: "10:00 am",
         endtime: "6:00 pm",

@@ -6,9 +6,9 @@ export class BlogPostManager extends Component {
     persons: [
       {
         titile: "exam",
-        Author: "ram",
-        name: "vijayram",
-        mail: "vijayram@143",
+        Author: "Chethan",
+        name: "Bhagath",
+        mail: "Bhagath99@gmail.com",
       },
     ],
   };

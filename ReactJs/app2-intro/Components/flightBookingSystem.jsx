@@ -5,7 +5,7 @@ export class FlightBookingSystem extends Component() {
     persons: [
       {
         flightnumber: "44182",
-        departurecity: "Vijay",
+        departurecity: "Chicago",
         arrivalcity: "th",
         departuretime: "10:30pm",
       },

@@ -5,7 +5,7 @@ export class GameCharacter extends Component {
   state = {
     persons: [
       {
-        name: "Ram",
+        name: "Hulk",
         level: "200",
         healthpoints: "10%",
       },

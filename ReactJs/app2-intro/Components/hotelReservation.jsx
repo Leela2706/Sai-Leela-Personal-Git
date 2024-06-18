@@ -6,7 +6,7 @@ export class HotelReservationSystem extends Component {
     persons: [
       {
         roomnumber: "9640744182",
-        guestname: "Vijay",
+        guestname: "Vivek Sagar",
         checkindate: "12/3/2009",
         checkoutdate: "3/4/2009",
       },
