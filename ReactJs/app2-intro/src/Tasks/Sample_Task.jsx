@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 
-const Assignment_3 = () => {
+const Sample_Task = () => {
   const [userDetails, setUserDetails] = useState({
     email: "",
     password: "",
@@ -306,4 +306,4 @@ const Assignment_3 = () => {
   );
 };
 
-export default Assignment_3;
+export default Sample_Task;
