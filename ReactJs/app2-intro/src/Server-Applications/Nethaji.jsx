@@ -1,10 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import axios from 'axios'
-import Nethajiform from "./Nethaji.form";
-import Nethajitable from "./Nethaji_table";
-const Nethaji = () => {
+import axios from "axios"
+import Nethaji_Form_application from "./Nethali_form";
+import Nethaji_Table_application from "./Nethaji_Table";
+
+const Nethaji_application = () => {
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -60,7 +61,7 @@ const Nethaji = () => {
     <div className="container">
       <div className="row">
         <div className="col-4">
-          <Nethajiform
+          <Nethaji_Form_application
             handleChange={handleChange}
             user={user}
             createUser={createUser}
@@ -69,7 +70,7 @@ const Nethaji = () => {
           />
         </div>
         <div className="col-8">
-          <Nethajitable 
+          <Nethaji_Table_application
             allUsers={allUsers}
             editUser={editUser}
             deleteUser={deleteUser}/>
@@ -79,4 +80,4 @@ const Nethaji = () => {
   );
 };
 
-export default Nethaji
+export default Nethaji_application

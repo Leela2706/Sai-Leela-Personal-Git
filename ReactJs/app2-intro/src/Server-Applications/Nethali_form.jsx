@@ -1,6 +1,6 @@
 import React from "react";
 
-const Nethajiform = ({ handleChange, user, createUser, isEdit,updateUser }) => {
+const Nethaji_Form_application = ({ handleChange, user, createUser, isEdit,updateUser }) => {
   return (
     <div>
       <form>
@@ -79,4 +79,4 @@ const Nethajiform = ({ handleChange, user, createUser, isEdit,updateUser }) => {
   );
 };
 
-export default Nethajiform
+export default Nethaji_Form_application

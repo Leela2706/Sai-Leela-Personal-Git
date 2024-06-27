@@ -1,6 +1,6 @@
 import React from "react";
 
-const Nethajitable = ({ allUsers,editUser,deleteUser }) => {
+const Nethaji_Table_application = ({ allUsers,editUser,deleteUser }) => {
   return (
     <div>
       <table className="table table-striped table-hover">
@@ -36,4 +36,4 @@ const Nethajitable = ({ allUsers,editUser,deleteUser }) => {
   );
 };
 
-export default Nethajitable
+export default Nethaji_Table_application

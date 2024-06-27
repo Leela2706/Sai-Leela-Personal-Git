@@ -8,6 +8,7 @@ import Sample_Task from "./Tasks/Sample_Task";
 import Task_1 from "./Tasks/Task_1";
 import Task_2 from "./Tasks/Task_2";
 import Nethaji from "./Server-Applications/Nethaji";
+import Nethaji_application from "./Server-Applications/Nethaji";
 
 
 
@@ -24,7 +25,7 @@ function App() {
     {/* <Sample_Task/> */}
     {/* <Task_1/> */}
     {/* <Task_2/> */}
-    <Nethaji/>``
+    <Nethaji_application/>
     
    
   </div>
