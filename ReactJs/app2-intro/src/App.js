@@ -25,7 +25,7 @@ function App() {
     {/* <Sample_Task/> */}
     {/* <Task_1/> */}
     {/* <Task_2/> */}
-    <Nethaji_application/>
+    <Nethaji_application/> 
     
    
   </div>
