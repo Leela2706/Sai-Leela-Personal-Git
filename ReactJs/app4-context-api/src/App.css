@@ -1,0 +1,44 @@
+#mainDiv {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  background: cadetblue;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+#grandParent {
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  background: chocolate;
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+
+#parent {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background: yellow;
+  align-items: center;
+}
+#grandChild{
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  background:darkblue;
+  align-items: center;
+}
+#grandChild h2{
+  color: white;
+}
+#child{
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+  background:darkolivegreen;
+  align-items: center;
+}
