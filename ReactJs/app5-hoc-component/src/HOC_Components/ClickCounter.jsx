@@ -2,6 +2,7 @@ import React from "react";
 import HOC_count from "./HOC_Counter";
 
 
+
 function ClickCounter(props) {
   const { count, incrementCount, decrementCount } = props;
 
