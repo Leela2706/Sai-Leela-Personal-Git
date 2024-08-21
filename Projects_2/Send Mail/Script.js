@@ -2,9 +2,9 @@
     function sendEmail() {
         Email.send({
             Host: "smtp.gmail.com",
-            Username: "vijayram964932@gmail.com",
+            Username: "saileelavardhan12@gmail.com",
             Password: "password",
-            To: 'vijayram964932.com',
+            To: 'leela@2706.com',
             From: document.getElementById("email").value,
             Subject: "This is the subject",
             Body: "And this is the body"
