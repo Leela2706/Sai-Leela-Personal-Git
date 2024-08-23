@@ -25,7 +25,6 @@ function Calculator() {
         <div className="result">{result}</div>  
       </div>
       <div className="buttons">
-        {/* Render calculator buttons */}
         <button onClick={() => handleClick("1")}>1</button>
         <button onClick={() => handleClick("2")}>2</button>
         <button onClick={() => handleClick("3")}>3</button>
