@@ -1,10 +1,10 @@
 import './App.css';
-import AgeCalculator from './components/Age_calculator';
+import WeatherApp from './components/Weather_Report';
 
 function App() {
   return (
     <div className="App">
-      <AgeCalculator/>
+      <WeatherApp/>
     </div>
   );
 }

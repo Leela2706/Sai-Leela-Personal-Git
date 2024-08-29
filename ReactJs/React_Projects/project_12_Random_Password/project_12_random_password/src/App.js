@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import PasswordGenerator from './components/Random-Password';
 
 function App() {
   return (

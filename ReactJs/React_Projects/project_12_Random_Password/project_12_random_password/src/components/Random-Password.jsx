@@ -51,7 +51,7 @@ const PasswordGenerator = () => {
             <div className="display">
                 <input type="text" value={password} readOnly placeholder="Password" />
                 <img 
-                    src="path/to/copy-icon.png" // Update with the actual path to your copy icon
+                    src='..\components\copy.svg.jsx'
                     alt="Copy Password"
                     onClick={copyPassword}
                     style={{ cursor: 'pointer' }}

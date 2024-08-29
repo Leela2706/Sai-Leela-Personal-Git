@@ -1,10 +1,10 @@
 import './App.css';
-import AgeCalculator from './components/Age_calculator';
+import TextToSpeech from './components/Text_To_Voice';
 
 function App() {
   return (
     <div className="App">
-      <AgeCalculator/>
+      <TextToSpeech/>
     </div>
   );
 }

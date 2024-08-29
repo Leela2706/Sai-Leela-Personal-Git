@@ -1,10 +1,10 @@
 import './App.css';
-import AgeCalculator from './components/Age_calculator';
+import QuoteOfTheDay from './components/Quate_Generator';
 
 function App() {
   return (
     <div className="App">
-      <AgeCalculator/>
+    <QuoteOfTheDay/>
     </div>
   );
 }
