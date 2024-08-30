@@ -28,13 +28,17 @@ const TextToSpeech = () => {
     const handleTextChange = (e) => {
         setText(e.target.value);
     }
-
-    const handleSpeak = () => {
-        const speech = new SpeechSynthesisUtterance();
+    const speech = new SpeechSynthesisUtterance();
         speech.text = text;
         speech.voice = selectedVoice;
+
+    const handleSpeak = () => {
+        
         window.speechSynthesis.speak(speech);
     };
+    const handleStop = ()=> {
+        window.speechSynthesis.cancel(speech)
+    }
 
     return ( 
         <div className='hero'>
@@ -50,6 +54,9 @@ const TextToSpeech = () => {
                 </select>
                 <button onClick={handleSpeak}>
                     <img src="" alt="" />Listen
+                </button>
+                <button onClick={handleStop}>
+                    Stop
                 </button>
             </div>
                 

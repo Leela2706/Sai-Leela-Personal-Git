@@ -30,7 +30,7 @@ const QRCodeGenerator = () => {
       <div style={{ ...styles.imgBox, ...(imgSrc ? styles.showImg : {}) }}>
         <img src={imgSrc} alt="QR Code" style={styles.qrImage} />
       </div>
-      <button onClick={generateQR} style={styles.button}>Generate QR Code</button>
+      <button onClick={generateQR} style={styles.button} disabled = {qrText.length == 0}>Generate QR Code</button>
     </div>
   );
 };

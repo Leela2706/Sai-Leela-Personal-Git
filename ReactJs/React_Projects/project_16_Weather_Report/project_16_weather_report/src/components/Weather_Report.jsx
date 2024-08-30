@@ -45,7 +45,7 @@ const WeatherApp = () => {
           value={city} 
           onChange={(e) => setCity(e.target.value)} 
         />
-        <button onClick={handleSearch}>
+        <button onClick={handleSearch} disabled = {city.length==0}>
           <img src="./search.svg" alt="Search" />
         </button>
       </div>
