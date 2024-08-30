@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -47,7 +48,6 @@
 .hero {
   width: 100%;
   height: 100vh;
-  
   background-size: cover;
   background-position: center;
   padding: 10px 10px;
@@ -73,6 +73,12 @@
 .hero p {
   margin: 10px 0 50px;
   font-size: 20px;
+}
+
+.hero h3,
+h1,
+p {
+  color: #282c34;
 }
 
 form {
@@ -112,7 +118,7 @@ span {
   display: block;
 }
 
-.submit-btn{
+.submit-btn {
   color: black;
   font-size: 18px;
 }

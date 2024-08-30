@@ -1,4 +1,3 @@
-// ThemeToggle.js
 import React, { useState, useEffect } from 'react';
 
 
