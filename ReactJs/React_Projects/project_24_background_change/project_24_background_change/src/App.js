@@ -5,7 +5,7 @@ import BackgroundChanger from './components/BackGround_Change';
 function App() {
   return (
     <div className="App">
-      <BackgroundChanger/>
+      
     </div>
   );
 }
