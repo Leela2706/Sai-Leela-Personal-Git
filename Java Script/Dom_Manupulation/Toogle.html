@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Class</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <p id="myText">Click to highlight this text</p>
+  <button onclick="toggleHighlight()">Toggle Highlight</button>
+
+  <script>
+    function toggleHighlight() {
+      document.getElementById('myText').classList.toggle('highlight');
+    }
+  </script>
+</body>
+</html>
