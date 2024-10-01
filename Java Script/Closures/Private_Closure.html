@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Variables with Closures</title>
+</head>
+<body>
+    <h2>Private Counter</h2>
+    <button id="incrementButton">Increment</button>
+    <button id="decrementButton">Decrement</button>
+    <p id="counterDisplay">Counter: 0</p>
+
+    <script>
+        function createCounter() {
+            let counter = 0;
+
+            return {
+                increment: function() {
+                    counter++;
+                    return counter;
+                },
+                decrement: function() {
+                    counter--;
+                    return counter;
+                }
+            };
+        }
+
+        const counter = createCounter();
+        const incrementButton = document.getElementById('incrementButton');
+        const decrementButton = document.getElementById('decrementButton');
+        const counterDisplay = document.getElementById('counterDisplay');
+
+        incrementButton.addEventListener('click', () => {
+            counterDisplay.textContent = `Counter: ${counter.increment()}`;
+        });
+
+        decrementButton.addEventListener('click', () => {
+            counterDisplay.textContent = `Counter: ${counter.decrement()}`;
+        });
+    </script>
+</body>
+</html>

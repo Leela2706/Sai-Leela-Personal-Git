@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure with setTimeout</title>
+</head>
+<body>
+    <h2>Closure with setTimeout</h2>
+    <button id="startTimerButton">Start Timer</button>
+    <p id="timerMessage"></p>
+
+    <script>
+        function delayedMessage(delay) {
+            const message = "This message is delevered!";
+            setTimeout(() => {
+                document.getElementById('timerMessage').textContent = message;
+            }, delay);
+        }
+
+        document.getElementById('startTimerButton').addEventListener('click', () => {
+            delayedMessage(2000);
+        });
+    </script>
+</body>
+</html>

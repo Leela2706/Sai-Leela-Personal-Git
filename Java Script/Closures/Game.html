@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Maintenance with Closures</title>
+</head>
+<body>
+    <h2>Closure to Maintain State</h2>
+    <button id="startGameButton">Start Game</button>
+    <button id="winGameButton">Win Game</button>
+    <button id="loseGameButton">Lose Game</button>
+    <p id="gameStatus"></p>
+
+    <script>
+        function game() {
+            let score = 0;
+            let gameOver = false;
+
+            return {
+                start: function() {
+                    score = 0;
+                    gameOver = false;
+                    return "Game Started!";
+                },
+                win: function() {
+                    if (!gameOver) {
+                        score += 10;
+                        gameOver = true;
+                        return `You won! Your score: ${score}`;
+                    } else {
+                        return "Game is already over.";
+                    }
+                },
+                lose: function() {
+                    if (!gameOver) {
+                        score -= 5;
+                        gameOver = true;
+                        return `You lost! Your score: ${score}`;
+                    } else {
+                        return "Game is already over.";
+                    }
+                }
+            };
+        }
+
+        const newGame = game();
+        const gameStatus = document.getElementById('gameStatus');
+
+        document.getElementById('startGameButton').addEventListener('click', () => {
+            gameStatus.textContent = newGame.start();
+        });
+
+        document.getElementById('winGameButton').addEventListener('click', () => {
+            gameStatus.textContent = newGame.win();
+        });
+
+        document.getElementById('loseGameButton').addEventListener('click', () => {
+            gameStatus.textContent = newGame.lose();
+        });
+    </script>
+</body>
+</html>

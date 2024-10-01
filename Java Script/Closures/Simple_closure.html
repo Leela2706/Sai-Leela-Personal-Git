@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Closure</title>
+</head>
+<body>
+    <h2>Simple Closure </h2>
+    <button id="clickButton">Click Me</button>
+    <p id="result"></p>
+
+    <script>
+        function outerFunction() {
+            let counter = 0;
+
+            function innerFunction() {
+                counter++;
+                return counter;
+            }
+
+            return innerFunction;
+        }
+
+        const incrementCounter = outerFunction(); // Creates closure
+        const button = document.getElementById('clickButton');
+        const result = document.getElementById('result');
+
+        button.addEventListener('click', () => {
+            result.textContent = `Button clicked ${incrementCounter()} times.`;
+        });
+    </script>
+</body>
+</html>

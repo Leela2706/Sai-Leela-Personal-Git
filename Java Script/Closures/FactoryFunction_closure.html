@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Function with Closures</title>
+</head>
+<body>
+    <h2>Factory Function</h2>
+    <button id="createCounterButton">Create New Counter</button>
+    <div id="countersContainer"></div>
+
+    <script>
+        function createCounter() {
+            let count = 0;
+            return function() {
+                count++;
+                return count;
+            };
+        }
+
+        const createCounterButton = document.getElementById('createCounterButton');
+        const countersContainer = document.getElementById('countersContainer');
+
+        createCounterButton.addEventListener('click', () => {
+            const newCounter = createCounter();
+            const counterDiv = document.createElement('div');
+            const counterButton = document.createElement('button');
+            const counterResult = document.createElement('p');
+
+            counterButton.textContent = "Increment Counter";
+            counterResult.textContent = `Counter: ${newCounter()}`;
+
+            counterButton.addEventListener('click', () => {
+                counterResult.textContent = `Counter: ${newCounter()}`;
+            });
+
+            counterDiv.appendChild(counterButton);
+            counterDiv.appendChild(counterResult);
+            countersContainer.appendChild(counterDiv);
+        });
+    </script>
+</body>
+</html>
